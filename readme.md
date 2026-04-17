@@ -37,23 +37,23 @@ FlashMart is a full-stack MERN application focused on solving real-world e-comme
 
 ### 🏠 Home Page
 
-![Home](./screenshots/home.png)
+![Home](./screenshots/home.jpeg)
 
 ### 🔐 Login Page
 
-![Login](./screenshots/login.png)
+![Login](./screenshots/login.jpeg)
 
-### 📝 Register Page
+### 📝 Flash sale Section
 
-![Register](./screenshots/register.png)
+![Register](./screenshots/flashsale.jpeg)
 
-### ⚡ Flash Sale Section
+### ⚡ Cart and Checkout page 
 
-![Flash Sale](./screenshots/flashsale.png)
+![Flash Sale](./screenshots/cart.jpeg)
 
 ### 📊 Admin Dashboard
 
-![Admin](./screenshots/admin.png)
+![Admin](./screenshots/admin.jpeg)
 
 ---
 
