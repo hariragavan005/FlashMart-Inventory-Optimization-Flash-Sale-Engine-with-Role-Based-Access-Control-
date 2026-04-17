@@ -59,44 +59,95 @@ FlashMart is a full-stack MERN application focused on solving real-world e-comme
 
 ## 🚀 Getting Started
 
-### 1. Clone the repo
+## 🧑‍💻 How to Use / Run This Project
+
+Follow these steps to run the project locally:
+
+---
+
+### 🔁 1. Fork the Repository
+
+Click the **Fork** button (top-right of this repo) to create your own copy.
+
+---
+
+### 📥 2. Clone Your Fork
 
 ```bash
-git clone https://github.com/your-username/flashmart.git
+git clone https://github.com/hariragavan005/FlashMart-Inventory-Optimization-Flash-Sale-Engine-with-Role-Based-Access-Control-
 cd flashmart
 ```
 
-### 2. Install dependencies
+---
+
+### 📦 3. Install Dependencies
+
+#### Backend
 
 ```bash
 cd backend
 npm install
+```
 
+#### Frontend
+
+```bash
 cd ../frontend
 npm install
 ```
 
-### 3. Setup environment variables
+---
 
-Create `.env` file inside backend:
+### ⚙️ 4. Setup Environment Variables
+
+Create a `.env` file inside the `backend` folder:
 
 ```env
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_secret
+MONGO_URI=mongodb://localhost:27017/ecommerceDB
+JWT_SECRET=your_secret_key
 PORT=5000
 ```
 
-### 4. Run the project
+---
+
+### ▶️ 5. Run the Application
+
+#### Start Backend
 
 ```bash
-# backend
+cd backend
 npm run dev
+```
 
-# frontend
+#### Start Frontend
+
+```bash
+cd frontend
 npm start
 ```
 
 ---
+
+### 🌐 6. Open in Browser
+
+```text
+http://localhost:5000
+```
+
+---
+
+## 🛠️ Requirements
+
+Make sure you have installed:
+
+* Node.js (v16+)
+* MongoDB (local or Atlas)
+* npm or yarn
+
+---
+
+ 
+
 
 ## 🚀 Future Improvements (Phase 2)
 
