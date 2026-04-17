@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  :root {
+    --bg-primary: #FAFAF8;
+    --bg-surface: #FFFFFF;
+    --bg-elevated: #F4F1EC;
+    --accent-primary: #E8940A;
+    --accent-hot: #FF4D1C;
+    --accent-glow: transparent;
+    --text-primary: #111111;
+    --text-secondary: #555550;
+    --border: #E8E4DC;
+    --success: #16A34A;
+    --danger: #DC2626;
+
+    /* Legacy keys mapped to new palette */
+    --bg-color: var(--bg-primary);
+    --surface-color: var(--bg-surface);
+    --text-main: var(--text-primary);
+    --text-muted: var(--text-secondary);
+    --primary-color: var(--accent-primary);
+  }
+  
+  .dark {
+    --bg-primary: #0F0F0F;
+    --bg-surface: #1A1A1A;
+    --bg-elevated: #242424;
+    --accent-primary: #F5A623;
+    --accent-hot: #FF4D1C;
+    --accent-glow: #F5A62340;
+    --text-primary: #F0EDE8;
+    --text-secondary: #9C9C8E;
+    --border: #2A2A2A;
+    --success: #22C55E;
+    --danger: #FF4D1C;
+
+    /* Legacy keys mapped to new palette */
+    --bg-color: var(--bg-primary);
+    --surface-color: var(--bg-surface);
+    --text-main: var(--text-primary);
+    --text-muted: var(--text-secondary);
+    --primary-color: var(--accent-primary);
+  }
+
+  body {
+    @apply bg-background text-textMain font-body transition-colors duration-300;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-premium-gold to-premium-coral bg-clip-text text-transparent;
+  }
+
+  .premium-card {
+    @apply bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1;
+  }
+
+  .premium-button {
+    @apply bg-gradient-to-r from-premium-gold to-premium-coral text-white font-semibold py-2 px-6 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg;
+  }
+
+  /* Blob Shapes */
+  .blob-1 {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  .blob-2 {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  .blob-3 {
+    border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+  }
+
+  .blob-animation {
+    animation: blob-morph 8s ease-in-out infinite;
+  }
+
+  @keyframes blob-morph {
+    0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+    50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-premium-cream;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-premium-gold rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-premium-gold/80;
+}
